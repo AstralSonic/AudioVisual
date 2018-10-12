@@ -15,9 +15,7 @@ public class Main {
     for (ItemType it : ItemType.values()) {
       System.out.println(it + " " + it.info);
     }
-
   }
-
 }
 
 class Widget extends Product {

@@ -24,12 +24,12 @@ public abstract class Product implements Item {
 
   }
 
-  public void setProductionNumber (int pNum){
-
+  public void setProductionNumber(int pNum){
+    currentProductionNumber = pNum;
   }
   // A method setProductionNumber that would have one integer parameter
 
-  public void setName (String pName){
+  public void setName(String pName){
     name = pName;
   }
 
@@ -44,5 +44,14 @@ public abstract class Product implements Item {
 
   public int getSerialNumber(){
     return serialNumber;
+  }
+
+
+
+  public String toString(){
+    return "Manufacturer : " + Item.manufacturer + "\n"
+        + "Serial Number : " + serialNumber + "\n"
+        + "Date : " + manufacturedOn + "\n"
+        + "Name : " + name;
   }
 }

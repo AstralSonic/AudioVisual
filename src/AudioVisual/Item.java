@@ -15,13 +15,13 @@ public interface Item {
 
   String manufacturer = "OracleProduction";
 
-  public void setProductionNumber (int pNum);
+  public void setProductionNumber(int pNum);
   // A method setProductionNumber that would have one integer parameter
 
-  public void setName (String pName);
+  public void setName(String pName);
   // A method setName that would have one String parameter
 
-  public String getName ();
+  public String getName();
   // A method getName that would return a String
 
   public Date ManufactureDate();
