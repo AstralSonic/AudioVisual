@@ -11,9 +11,9 @@ public enum ItemType {
   AUDIOMOBILE("AM"),
   VISUALMOBILE("VM");
 
-  public final String info;
+  public final String code;
 
-  ItemType(String info) {
-    this.info = info;
+  ItemType(String code) {
+    this.code = code;
   }
 }

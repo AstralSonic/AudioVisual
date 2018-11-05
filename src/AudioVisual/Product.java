@@ -41,12 +41,9 @@ public abstract class Product implements Item {
     return manufacturedOn;
   }
 
-
   public int getSerialNumber(){
     return serialNumber;
   }
-
-
 
   public String toString(){
     return "Manufacturer : " + Item.manufacturer + "\n"
