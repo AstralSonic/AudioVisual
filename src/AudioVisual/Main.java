@@ -7,6 +7,7 @@ public class Main {
 
   public static void main(String args[]) {
     AudioPlayerDriver.testAudioPlayer();
+    ScreenDriver.testScreen();
     /*
     Widget w1 = new Widget("Widget 1");
     System.out.println(w1.toString());
