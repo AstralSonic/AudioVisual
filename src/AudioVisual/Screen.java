@@ -2,16 +2,18 @@ package AudioVisual;
 
 public class Screen implements ScreenSpec {
 
+  MonitorType monitorType;
   String resolution;
   int refreshrate;
   int responsetime;
 
-  public Screen(String resolution, int refreshrate, int responsetime) {
+
+  public Screen(String resolution, int refreshrate, int responsetime, MonitorType monitorType) {
     this.resolution = resolution;
     this.refreshrate = refreshrate;
     this.responsetime = responsetime;
+    this.monitorType = monitorType;
   }
-// "Complete the methods from ScreenSpec interface"
 
   public void setResolution(String sRes) {
     resolution = sRes;
@@ -30,8 +32,9 @@ public class Screen implements ScreenSpec {
   }
 
   public String toString() {
-    return "Resolution : " + resolution + "\n"
+    return "Screen : Resolution : " + resolution + "\n"
         + "Refresh rate : " + refreshrate + "\n"
-        + "Response time : " + responsetime;
+        + "Response time : " + responsetime + "\n"
+        + "Monitor Type : " + monitorType;
   }
 }
