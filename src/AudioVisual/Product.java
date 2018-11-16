@@ -6,7 +6,7 @@ package AudioVisual;
 
 import java.util.Date;
 
-public abstract class Product implements Item {
+public abstract class Product implements Item, Comparable<Product>{
 
   //Fields to Product:
   int serialNumber;
@@ -50,5 +50,10 @@ public abstract class Product implements Item {
         + "Serial Number : " + serialNumber + "\n"
         + "Date : " + manufacturedOn + "\n"
         + "Name : " + name;
+  }
+
+  @Override
+  public int compareTo(Product o) {
+    return name.compareTo(o.name);     // I am comparing the name field of one object to the other
   }
 }

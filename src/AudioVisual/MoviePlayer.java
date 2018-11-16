@@ -24,15 +24,17 @@ public class MoviePlayer extends Product implements MultimediaControl{
       System.out.println("Next movie");
     }
 
-  MoviePlayer(String name, Screen screen){
+  MoviePlayer(String name, Screen screen, MonitorType monitorType){
     super(name);
     this.screen = screen;
+    this.monitorType = monitorType;
 
 
     // These are giving me null types
     }
 
   public String toString(){
-    return super.toString() + "\n" + screen.toString();
+    return super.toString() + "\n" + screen.toString() + "\n"
+        + monitorType.toString();
   }
 }
