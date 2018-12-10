@@ -1,11 +1,18 @@
+/***************************************************************************************************
+ * NAME: Guilherme Pereira
+ * DESCRIPTION: This class extends from Product (inherits the fields from Product) and implements
+ * MultimediaControl (because it is an interface, therefore it cannot be inherited). The purpose of
+ * this class is to give commands for movie player devices to let the user know when the audio is
+ * playing, stopping, going next or returning to a previous audio.
+ ***************************************************************************************************/
+
+
 package AudioVisual;
 
 public class MoviePlayer extends Product implements MultimediaControl{
 
-  // Fields
-
-  Screen screen;                 // Screen
-  MonitorType monitorType;       // Monitor Type
+  Screen screen;
+  MonitorType monitorType;
 
   @Override
   public void play() {
@@ -28,9 +35,6 @@ public class MoviePlayer extends Product implements MultimediaControl{
     super(name);
     this.screen = screen;
     this.monitorType = monitorType;
-
-
-    // These are giving me null types
     }
 
   public String toString(){

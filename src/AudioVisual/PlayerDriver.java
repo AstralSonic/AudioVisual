@@ -1,3 +1,10 @@
+/**************************************************************************************************
+ * NAME: Guilherme Pereira
+ * DESCRIPTION: This is a driver class that tests out the media player class by passing in sample
+ * arguments into the parameters.
+ **************************************************************************************************/
+
+
 package AudioVisual;
 
 import javax.management.monitor.Monitor;

@@ -1,3 +1,11 @@
+/***************************************************************************************************
+ * NAME: Guilherme Pereira
+ * DESCRIPTION: This driver class tests (or runs) the contents from MoviePlayer by giving it some
+ * sample input for each field, such as name, resolution, refreshrate, response time, and monitor
+ * type.
+ **************************************************************************************************/
+
+
 package AudioVisual;
 
 public class MoviePlayerDriver {

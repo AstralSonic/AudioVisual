@@ -1,3 +1,10 @@
+/**************************************************************************************************
+ * NAME: Guilherme Pereira
+ * DESCRIPTION: This class keeps creates the audioSpecification and mediaType fields that are later
+ * used in MultimediaControl. this class inherits fields from Products and implements
+ * MultimediaControl
+ **************************************************************************************************/
+
 package AudioVisual;
 
 public class AudioPlayer extends Product implements MultimediaControl{
